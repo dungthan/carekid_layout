@@ -11,6 +11,7 @@ import './carekid.html';
 import { name as Login } from '../login/login';
 import { name as Register } from '../register/register';
 import { name as ForgetPassword } from '../forgetPassword/forgetPassword';
+import { name as RequirementList } from '../requirementList/requirementList';
 
 class Carekid {}
 
@@ -24,6 +25,7 @@ export default angular.module(name, [
 	Login,
 	Register,
 	ForgetPassword,
+	RequirementList,
 	'ionic'
 ]).component(name, {
 	templateUrl: `imports/ui/components/${name}/${name}.html`,

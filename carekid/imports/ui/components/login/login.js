@@ -4,7 +4,18 @@ import uiRouter from 'angular-ui-router';
 
 import './login.html';
 
-class Login {}
+class Login {
+	constructor($state) {
+		'ngInject';
+		this.$state = $state;
+		this.user = {};
+	}
+
+	login() {
+		console.log('list');
+		this.$state.go('requirementList');
+	}
+}
 
 const name = 'login';
 

@@ -1,18 +1,18 @@
 <ion-header-bar class="bar-light">
-	<h1 class="title">Đăng nhập</h1>
+	<h1 class="title">CARE-KID</h1>
 </ion-header-bar>
 
 <ion-content>
 
 	<div class="list">
 		<label class="item item-input">
-			<input type="text" placeholder="Email">
+			<input type="text" placeholder="Email" ng-model="login.user.email">
 		</label>
 		<label class="item item-input">
-			<input type="text" placeholder="Mật khẩu">
+			<input type="password" placeholder="Mật khẩu" ng-model="login.user.password">
 		</label>
 
-		<button class="button button-full button-positive">
+		<button class="button button-full button-positive" ng-click="login.login()" ng-touch="login.login()">
 			Đăng nhập
 		</button>
 	</div>
